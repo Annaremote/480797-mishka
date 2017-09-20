@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Анна](https://up.htmlacademy.ru/adaptive/12/user/480797).
-* Наставник: `Неизвестно`.
+* Студент: [Анна Ходжаева](https://up.htmlacademy.ru/adaptive/12/user/480797).
+* Наставник: [Александр Кошара](https://up.htmlacademy.ru/adaptive/12/user/169035).
 
 ---
 
