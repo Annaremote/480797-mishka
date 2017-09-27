@@ -32,11 +32,11 @@
         <div class="offers__wrapper">
             <h2 class="offers__title">Магазин "Мишка" - милые штучки ручной работы для дома</h2>
             <ul class="offers-list">
-              <li class="offers-list__item offers-list-interior">
+              <li class="offers-list__item offers-list__interior">
                 Предметы интерьера
                 <img class="offers-list__icon" src="http://placehold.it/41x62" width="41" height="62" alt="Лампа">
               </li>
-              <li class="offers-list__item offers-list-toy">
+              <li class="offers-list__item offers-list__toy">
                 Детские игрушки
                 <img class="offers-list__icon" src="http://placehold.it/61x61" width="61" height="61" alt="Кубик">
               </li>
@@ -154,16 +154,22 @@
     </div>
   </div>
   </footer>
-<section class="pop-up add-to-basket">
-  <form class="add-to-basket__form" method="get" action="https://echo.htmlacademy.ru">
-    <h2 class="add-to-basket__title">Добавить в корзину</h2>
-    <p class="add-to-basket__sign">Выберите размер:</p>
-    <p class="add-to-basket__toggles">
-      <input type="radio" class="add-to-basket__s" name="size" value="s">S
-      <input type="radio" class="add-to-basket__m" name="size" value="m">M
-      <input type="radio" class="add-to-basket__l" name="size" value="l">L
+<section class="pop-up add-basket">
+  <form class="add-basket__form" method="get" action="https://echo.htmlacademy.ru">
+    <h2 class="add-basket__title">Добавить в корзину</h2>
+    <p class="add-basket__sign">Выберите размер:</p>
+    <p class="add-basket__toggles">
+      <label class="add-basket__sizes size">
+        <input type="radio" class="size__item" name="size" value="s">S
+      </label>
+      <label class="add-basket__sizes size">
+        <input type="radio" class="size__item" name="size" value="m">M
+      </label>
+      <label class="add-basket__sizes size">
+        <input type="radio" class="size__item" name="size" value="l">L
+      </label>
     </p>
-  <button class="add-to-basket__button" type="submit">Добавить</button>
+  <button class="add-basket__button" type="submit">Добавить</button>
   </form>
   </section>
 </body>
