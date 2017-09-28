@@ -1,0 +1,25 @@
+$black-color: #000000;
+$grey-color: #444444;
+
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: $black-color;
+}
+
+.review__description {
+  font-size: 15px;
+  line-height: 30px;
+  color: $grey-color;
+}
+
+.review__name {
+  font-size: 17px;
+  line-height: 24px;
+  color: $black-color;
+}
+.review__email {
+  font-size: 17px;
+  line-height: 30px;
+  color: $grey-color;
+}
