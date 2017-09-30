@@ -1,15 +1,13 @@
-$grey-color: #444444;
-
 .week-product__title {
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: $black-color;
 }
 
 .week-product__sign {
   font-size: 17px;
   line-height: 20px;
-  color: #63d1bb;
+  color: $lightgreen-color;
 }
 
 .week-product__description {

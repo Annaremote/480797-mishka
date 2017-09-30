@@ -35,8 +35,8 @@
     <section class="form">
       <form class="callback-form" method="get" action="https://echo.htmlacademy.ru">
         <p class="callback-form__group">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="type">
-          <legend class="type__legend">Тип</legend>
+        <fieldset class="type form">
+          <legend class="type__legend form__legend">Тип</legend>
             <label class="radio">
               <input class="visually-hidden radio__input" type="radio" name="types-group" value="Аксессуар для интерьера" checked>
                 <div class="radio__sign">Аксессуар для интерьера</div>
@@ -46,8 +46,8 @@
                 <div class="radio__sign">Детская игрушка</div>
             </label>
           </fieldset>
-          <fieldset class="color">
-            <legend class="color__legend">Цвет</legend>
+          <fieldset class="color form">
+            <legend class="color__legend form__legend">Цвет</legend>
               <label class="checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="white" checked>
                     Белый
@@ -73,42 +73,42 @@
                       Оранжевый
                 </label>
           </fieldset>
-          <fieldset class="data">
-            <legend class="data__legend">ФИО</legend>
+          <fieldset class="data form">
+            <legend class="data__legend form__legend">ФИО</legend>
               <div class="user-data">
-                <div class="name-field">
+                <div class="name-field field">
                   <label class="name-field__label">
-                    <input class="name-field__input" type="text" name="search" placeholder="Введите ваше имя*" required>
+                    <input class="name-field__input field__input" type="text" name="search" placeholder="Введите ваше имя*" required>
                     Имя:
                   </label>
                 </div>
-                <div class="surname-field">
+                <div class="surname-field field">
                   <label class="surname-field__label">
-                    <input class="surname-field__input" type="text" name="search" placeholder="Укажите фамилию*" required>
+                    <input class="surname-field__input field__input" type="text" name="search" placeholder="Укажите фамилию*" required>
                     Фамилия:
                   </label>
                 </div>
-                <div class="patronymic-field">
+                <div class="patronymic-field field">
                   <label class="patronymic-field__label">
-                    <input class="patronymic-field__input" type="text" name="search" placeholder="Отчество, если желаете">
+                    <input class="patronymic-field__input field__input" type="text" name="search" placeholder="Отчество, если желаете">
                     Отчество:
                   </label>
                 </div>
           </fieldset>
-            <div class="phone-field phone-data">
-              <label class="phone-data__label">тел
+            <div class="phone-field phone-data data">
+              <label class="phone-data__label data__label">тел
                 <input class="phone-data__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
                 <img class="phone-data__img" src="img/icon-phone.svg" width="25" height="24" alt="Телефон"></img>
               </label>
             </div>
-            <div class="email-field email-data">
-              <label class="email-data__label">E-mail
+            <div class="email-field email-data data">
+              <label class="email-data__label data__label">E-mail
                 <input class="email-data__input" type="email" name="email" placeholder="Ваш Email*" required>
                 <img class="email-data__img" src="img/icon-mail.svg" width="32" height="21" alt="Почта"></img>
               </label>
             </div>
-            <div class="wish-field wish-data">
-              <label class="wish-data__label">доп
+            <div class="wish-field wish-data data">
+              <label class="wish-data__label data__label">доп
                 <textarea class="wish-data__input" type="textarea" name="wish" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
             </div>

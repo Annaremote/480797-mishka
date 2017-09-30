@@ -1,37 +1,36 @@
 .callback-form__group {
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $grey-color;
 }
-.type__legend,
-.color__legend,
-.data__legend {
+
+.form__legend {
   font-size: 17px;
   line-height: 16px;
-  color: #63d1bb;
+  color: $lightgreen-color;
 }
-.phone-data__label,
-.email-data__label,
-.wish-data__label {
+
+.data__label {
   font-size: 17px;
   line-height: 16px;
-  color: #63d1bb;
+  color: $lightgreen-color;
 }
+
 .radio__sign,
 .checkbox__input {
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: $black-color;
 }
-.name-field__input,
-.surname-field__input,
-.patronymic-field__input {
+
+.field__input {
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: $black-color;
 }
+
 .form__sign {
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $grey-color;
 }
