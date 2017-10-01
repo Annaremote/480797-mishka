@@ -13,14 +13,14 @@
 .offers-list__item {
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white;
   list-style: none;
 }
 
 .offers-list--interior {
-  background-color: $lightgreen;
+  background-color: $green-light;
 }
 
 .offers-list--toy {
-  background-color: #56c3b2;
+  background-color: $green-dark;
 }
