@@ -1,7 +1,7 @@
 .offers__title {
   font-size: 27px;
   line-height: 30px;
-  color: #010000;
+  color: $black;
 }
 
 .offers__wrapper {
@@ -18,7 +18,7 @@
 }
 
 .offers-list--interior {
-  background-color: $lightgreen-color;
+  background-color: $lightgreen;
 }
 
 .offers-list--toy {
