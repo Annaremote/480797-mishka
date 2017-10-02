@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин милых штучек для дома "Мишка"</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
           <ul class="main-nav__list site-list">
@@ -29,13 +30,13 @@
   </header>
   <main class="main">
     <div class="page-title">
-      <h2>Вязание на заказ</h2>
+      <h2 class="page-title">Вязание на заказ</h2>
     </div>
-    <section class="form">
-      <form class="callback-form" method="get" action="https://echo.htmlacademy.ru">
-        <p class="callback-form__group">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="type">
-          <legend class="type__legend">Тип</legend>
+    <section class="callback-form">
+      <form class="form" method="get" action="https://echo.htmlacademy.ru">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <fieldset class="form__item">
+          <legend class="form__legend">Тип</legend>
             <label class="radio">
               <input class="visually-hidden radio__input" type="radio" name="types-group" value="Аксессуар для интерьера" checked>
                 <div class="radio__sign">Аксессуар для интерьера</div>
@@ -45,70 +46,66 @@
                 <div class="radio__sign">Детская игрушка</div>
             </label>
           </fieldset>
-          <fieldset class="color">
-            <legend class="color__legend">Цвет</legend>
+          <fieldset class="form__item">
+            <legend class="form__legend">Цвет</legend>
               <label class="checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="white" checked>
-                    Белый
+                <span class="checkbox__sign">Белый</span>
               </label>
               <label class="checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="gray" checked>
-                      Серый
+                <span class="checkbox__sign">Серый</span>
               </label>
               <label class="checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="tiffany">
-                    «Тиффани»
+                <span class="checkbox__sign">«Тиффани»</span>
               </label>
               <label class="checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="black">
-                    Черный
+                <span class="checkbox__sign">Черный</span>
               </label>
               <label class="checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="pink">
-                    Розовый
-                </label>
+                <span class="checkbox__sign">Розовый</span>
+              </label>
                 <label class="checkbox">
                   <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="orange">
-                      Оранжевый
+                  <span class="checkbox__sign">Оранжевый</span>
                 </label>
           </fieldset>
-          <fieldset class="data">
-            <legend class="data__legend">ФИО</legend>
-              <div class="user-data">
-                <div class="name-field">
-                  <label class="name-field__label">
-                    <input class="name-field__input" type="text" name="search" placeholder="Введите ваше имя*" required>
-                    Имя:
-                  </label>
-                </div>
-                <div class="surname-field">
-                  <label class="surname-field__label">
-                    <input class="surname-field__input" type="text" name="search" placeholder="Укажите фамилию*" required>
-                    Фамилия:
-                  </label>
-                </div>
-                <div class="patronymic-field">
-                  <label class="patronymic-field__label">
-                    <input class="patronymic-field__input" type="text" name="search" placeholder="Отчество, если желаете">
-                    Отчество:
-                  </label>
-                </div>
+          <fieldset class="form__item">
+            <legend class="form__legend">ФИО</legend>
+              <label class="field">
+                <span class="field__title">Имя:</span>
+                <input class="field__input" type="text" name="search" placeholder="Введите ваше имя*" required>
+              </label>
+              <label class="field">
+                <span class="field__title">Фамилия:</span>
+                <input class="field__input" type="text" name="search" placeholder="Укажите фамилию*" required>
+              </label>
+              <label class="field">
+                <span class="field__title">Отчество:</span>
+                <input class="field__input" type="text" name="search" placeholder="Отчество, если желаете">
+              </label>
           </fieldset>
-            <div class="phone-field phone-data">
-              <label class="phone-data__label">тел
-                <input class="phone-data__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
-                <img class="phone-data__img" src="http://placehold.it/25x24" width="25" height="24" alt="Телефон"></img>
+            <div class="form__item">
+              <legend class="form__legend">тел</legend>
+              <label class="form__label field">
+                <input class="field__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+                <img class="field__img" src="img/icon-phone.svg" width="25" height="24" alt="Телефон"></img>
               </label>
             </div>
-            <div class="email-field email-data">
-              <label class="email-data__label">E-mail
-                <input class="email-data__input" type="email" name="email" placeholder="Ваш Email*" required>
-                <img class="email-data__img" src="http://placehold.it/32x21" width="32" height="21" alt="Почта"></img>
+            <div class="form__item">
+              <legend class="form__legend">E-mail</legend>
+              <label class="form__label field">
+                <input class="field__input" type="email" name="email" placeholder="Ваш Email*" required>
+                <img class="field__img" src="img/icon-mail.svg" width="32" height="21" alt="Почта"></img>
               </label>
             </div>
-            <div class="wish-field wish-data">
-              <label class="wish-data__label">доп
-                <textarea class="wish-data__input" type="textarea" name="wish" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="form__item">
+              <legend class="form__legend">доп</legend>
+              <label class="form__label field">
+                <textarea class="field__input" type="textarea" name="wish" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
             </div>
             <p class="form__sign"><sup>*</sup>Поля обязательны для заполнения</p>
@@ -126,7 +123,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </div>
