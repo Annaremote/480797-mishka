@@ -9,3 +9,23 @@
   line-height: 24px;
   color: $gray;
 }
+
+/*Для сетки*/
+.video {
+  width: 260px;
+  min-height: 500px;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 668px;
+    min-height: 743px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 1050px;
+    min-height: 456px;
+  }
+}

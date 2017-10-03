@@ -1,0 +1,38 @@
+/*Для сетки*/
+.catalog {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
+.catalog__item {
+  width: 260px;
+  min-height: 377px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    min-height: 335px;
+  }
+
+  .catalog__item {
+    width: 668px;
+    min-height: 335px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    width: 1050px;
+    min-height: 660px;
+  }
+
+  .catalog__item {
+    width: 315px;
+    min-height: 660px;
+  }
+}

@@ -15,3 +15,49 @@
   line-height: 16px;
   color: $green-light;
 }
+
+/*Для сетки*/
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
+.form__description {
+  width: 260px;
+  min-height: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+  }
+
+  .form__description {
+    width: 668px;
+    min-height: 90px;
+  }
+
+  .form__legend {
+    width: 167px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+  }
+
+  .form__description {
+    width: 700px;
+    min-height: 90px;
+  }
+
+  .form__legend {
+    width: 175px;
+  }
+}

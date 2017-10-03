@@ -21,3 +21,39 @@
   line-height: 30px;
   color: $gray;
 }
+
+/*Для сетки*/
+.review {
+  width: 320px;
+  margin: 30px;
+}
+
+.review__description {
+  width: 320px;
+  margin: 30px;
+  min-height: 285px;
+}
+
+.review__toggles {
+  width: 130px;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 670px;
+    background-image: url("review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 460px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 1050px;
+    background-image: url("review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 460px;
+  }
+}

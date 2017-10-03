@@ -10,17 +10,70 @@
   background-repeat: no-repeat;
 }
 
-.offers-list__item {
+.offers-list__sign {
   font-size: 19px;
   line-height: 24px;
   color: $white;
   list-style: none;
 }
 
-.offers-list--interior {
+.offers-list__item--interior {
   background-color: $green-light;
 }
 
-.offers-list--toy {
+.offers-list__item--toy {
   background-color: $green-dark;
+}
+
+/*Для сетки*/
+.offers__wrapper {
+  width: 320px;
+  margin: 0;
+  min-height: 490px;
+}
+
+.offers-list {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 205px;
+}
+
+.offers-list__item {
+  width: 320px;
+  height: 103px;
+}
+
+@media (min-width: $tablet-width) {
+  .offers__wrapper {
+    width: 670px;
+    min-height: 715px;
+  }
+
+  .offers-list {
+    display: flex;
+    width: 670px;
+    height: 120px;
+  }
+
+  .offers-list__item {
+    width: 335px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers__wrapper {
+    width: 1050px;
+    min-height: 670px;
+  }
+
+  .offers-list {
+    display: flex;
+    width: 1050px;
+    height: 120px;
+  }
+
+  .offers-list__item {
+    width: 525px;
+  }
 }
