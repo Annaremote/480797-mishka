@@ -2,6 +2,29 @@
   font-size: 25px;
   line-height: 30px;
   color: $black;
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .about-us__item {
@@ -9,51 +32,26 @@
   line-height: 20px;
   color: $black;
   list-style: none;
-}
-
-/*Для сетки*/
-.about-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 320px;
-  margin: 30px;
-}
-
-.about-us__title {
-  width: 200px;
-}
-
-@media (min-width: $tablet-width) {
-  .about-us {
-    display: flex;
-    flex-wrap: wrap;
-    width: 768px;
-    margin: 50px;
+  width: 262px;
+  padding-top: 85px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 297px;
+    padding-top: 110px;
+    padding-right: 37px;
   }
-
-  .about-us__item {
-    width: 305px;
-  }
-
-  .about-us__title {
-    width: 334px;
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 297px;
+    padding-top: 110px;
+    padding-right: 55px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
-    display: flex;
-    flex-wrap: wrap;
     width: 1050px;
-    margin: 175px;
-  }
-
-  .about-us__item {
-    width: 310px;
-  }
-
-  .about-us__title {
-    width: 410px;
   }
 }

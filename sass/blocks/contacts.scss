@@ -10,48 +10,11 @@
   color: $gray;
 }
 
-/*Для сетки*/
-.contacts {
-  width: 320px;
-  margin: 30px;
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.contacts-map {
-  width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .contacts {
-    width: 768px;
-    margin: 50px;
-  }
-
-  .contacts__info {
-    background-image: url("icon-flag.svg");
-    background-position: right;
-  }
-
-  .contacts-map {
-    width: 100%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts {
-    width: 1050px;
-  }
-
-  .contacts-list {
-    width: 350px;
-  }
-
-  .contacts__info {
-    width: 175px;
-    background-image: url("icon-flag.svg");
-    background-position: left;
-  }
-
-  .contacts-map {
-    width: 525px;
-  }
+.contacts-list {
+  width: 260px;
 }

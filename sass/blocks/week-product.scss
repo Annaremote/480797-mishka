@@ -1,26 +1,88 @@
+.week-product__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 53px;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 132px;
+  }
+}
+
 .week-product__title {
   font-size: 25px;
   line-height: 30px;
   color: $black;
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 525px;
+  }
 }
 
 .week-product__sign {
   font-size: 17px;
   line-height: 20px;
   color: $green-light;
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 17px;
+    width: 85px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 17px;
+    width: 85px;
+    order: -1;
+  }
 }
 
 .week-product__description {
   font-size: 15px;
   line-height: 24px;
   color: $gray;
+  width: 250px;
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 285px;
+    padding-right: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 285px;
+  }
 }
 
-.product-list {
+.week-product__table {
   font-size: 15px;
   line-height: 20px;
   color: $gray;
+  @media (min-width: $tablet-width) {
+    width: 295px;
+    padding-top: 60px;
+    padding-right: 105px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 295px;
+    padding-top: 60px;
+    padding-right: 105px;
+  }
 }
+
 
 .week-product__price {
   font-size: 17px;
@@ -28,27 +90,8 @@
   color: $gray;
 }
 
-/*Для сетки*/
-.week-product__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  margin: 30px;
-  min-height: 800px;
-}
-
-@media (min-width: $tablet-width) {
-  .week-product__wrapper {
-    display: flex;
-    width: 768px;
-    margin: 50px;
-    min-height: 550px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .week-product__wrapper {
-    width: 1050px;
-    min-height: 680px;
+.week-product__img {
+  @media (min-width: $tablet-width) {
+    order: 1;
   }
 }

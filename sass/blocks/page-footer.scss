@@ -1,31 +1,16 @@
-/*Для сетки*/
 .page-footer {
-  width: 320px;
   background-color: $gray-light;
 }
 
 .page-footer__wrapper {
-  width: 260px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    width: 768px;
-    background-color: $gray-light;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
   }
-
-  .page-footer__wrapper {
-    width: 668px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    width: 1250px;
-    background-color: $gray-light;
-  }
-
-  .page-footer__wrapper {
-    width: 1050px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
   }
 }

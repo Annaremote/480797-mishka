@@ -4,6 +4,30 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+/*html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+*/
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  min-width: 320px;
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+    min-width: 1250px;
+  }
+}
+
 a {
   text-decoration: none;
 }

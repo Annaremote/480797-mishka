@@ -1,13 +1,52 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      min-height: 460px;
+  }
+  @media (min-width: $desktop-width) {
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      padding-left: 175px;
+      min-height: 460px;
+  }
+}
+
 .review__title {
   font-size: 25px;
   line-height: 30px;
   color: $black;
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .review__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 15px;
   line-height: 30px;
   color: $gray;
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 642px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 770px;
+  }
 }
 
 .review__name {
@@ -20,40 +59,4 @@
   font-size: 17px;
   line-height: 30px;
   color: $gray;
-}
-
-/*Для сетки*/
-.review {
-  width: 320px;
-  margin: 30px;
-}
-
-.review__description {
-  width: 320px;
-  margin: 30px;
-  min-height: 285px;
-}
-
-.review__toggles {
-  width: 130px;
-}
-
-@media (min-width: $tablet-width) {
-  .review {
-    width: 670px;
-    background-image: url("review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    min-height: 460px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .review {
-    width: 1050px;
-    background-image: url("review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    min-height: 460px;
-  }
 }
