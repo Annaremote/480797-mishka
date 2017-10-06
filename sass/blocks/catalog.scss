@@ -2,37 +2,15 @@
 .catalog {
   display: flex;
   flex-direction: column;
-  width: 260px;
-}
 
-.catalog__item {
-  width: 260px;
-  min-height: 377px;
-}
-
-@media (min-width: $tablet-width) {
-  .catalog {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    width: 668px;
-    min-height: 335px;
   }
 
-  .catalog__item {
-    width: 668px;
-    min-height: 335px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog {
+  @media (min-width: $desktop-width) {
     display: flex;
-    width: 1050px;
-    min-height: 660px;
-  }
-
-  .catalog__item {
-    width: 315px;
-    min-height: 660px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

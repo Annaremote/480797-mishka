@@ -2,10 +2,12 @@
   font-size: 25px;
   line-height: 30px;
   color: $black;
+
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
@@ -15,11 +17,13 @@
 .about-us__list {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
@@ -34,6 +38,7 @@
   list-style: none;
   width: 262px;
   padding-top: 85px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
@@ -41,6 +46,7 @@
     padding-top: 110px;
     padding-right: 37px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 22px;
@@ -53,5 +59,57 @@
 @media (min-width: $desktop-width) {
   .about-us {
     width: 1050px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .eco {
+    order: -1;
+  }
+
+  .ball {
+    order: 1;
+  }
+
+  .price {
+    order: 2;
+  }
+
+  .rocket {
+    order: 3;
+  }
+
+  .like {
+    order: 4;
+  }
+
+  .gift {
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .eco {
+    order: -1;
+  }
+
+  .ball {
+    order: 1;
+  }
+
+  .price {
+    order: 2;
+  }
+
+  .rocket {
+    order: 3;
+  }
+
+  .like {
+    order: 4;
+  }
+
+  .gift {
+    order: 5;
   }
 }

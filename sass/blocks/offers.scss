@@ -4,18 +4,19 @@
   color: $black;
   min-height: 283px;
   text-align: center;
+
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
     min-height: 627px;
     text-align: center;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
     min-height: 626px;
     text-align: center;
-
   }
 }
 
@@ -29,11 +30,13 @@
 .offers-list {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     min-height: 120px;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
@@ -48,6 +51,7 @@
   width: 110px;
   min-height: 50px;
   padding-right: 105px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -56,6 +60,7 @@
     padding-right: 105px;
     padding-left: 35px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;

@@ -5,10 +5,14 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
