@@ -1,31 +1,79 @@
+.video {
+  margin: 0;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .video__title {
   font-size: 17px;
   line-height: 24px;
   color: $black;
+  width: 127px;
+  padding-left: 63px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 242px;
+    padding-left: 108px;
+  }
+}
+
+.video--info {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+  }
+}
+
+.video--head {
+  order: -1;
+}
+
+.video__icon {
+  padding-left: 20px;
+  padding-top: 10px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+}
+
+.video__play-icon {
+  position: absolute;
+  top: 40px;
+  left: 75px;
 }
 
 .video__description {
   font-size: 13px;
   line-height: 24px;
   color: $gray;
-}
+  width: 185px;
 
-/*Для сетки*/
-.video {
-  width: 260px;
-  min-height: 500px;
-}
-
-@media (min-width: $tablet-width) {
-  .video {
-    width: 668px;
-    min-height: 743px;
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 24px;
+    width: 582px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .video {
-    width: 1050px;
-    min-height: 456px;
-  }
+.video__img {
+  display: flex;
+  position: relative;
 }

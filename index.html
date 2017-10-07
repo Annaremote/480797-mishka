@@ -6,7 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="container">
+  <body>
+    <div class="container">
     <header class="page-header">
       <a class="logo">
         <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
@@ -29,6 +30,7 @@
         </ul>
     </nav>
   </header>
+</div>
   <main class="main">
       <section class="offers">
         <div class="offers__wrapper">
@@ -45,10 +47,14 @@
             </ul>
         </div>
       </section>
+    <div class="container">
       <section class="week-product">
           <div class="week-product__wrapper">
-            <h2 class="week-product__title">Вязаные корзинки</h2>
+            <div class="weekp-product--head">
+              <h2 class="week-product__title">Вязаные корзинки</h2>
               <p class="week-product__sign">Товар недели</p>
+            </div>
+            <div class="week-product--info">
                 <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
                 <table class="week-product__table product-list">
                   <tr>
@@ -80,31 +86,32 @@
             <p class="week-product__price">Цена: 990 руб</p>
             <button class="button" type="button">Заказать</button>
           </div>
+        </div>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
-            <li class="about-us__item eco">
+            <li class="about-us__item about-us__item--eco">
               <img class="about-us__icon" src="img/icon-feature-flower.svg" width="33" height="38" alt="Цветочек">
               <span>Экологически чистые материалы</span>
             </li>
-            <li class="about-us__item price">
+            <li class="about-us__item about-us__item--price">
               <img class="about-us__icon" src="img/icon-feature-money.svg" width="47" height="27" alt="Купюра">
               <span>Скандинавский стиль по российской цене</span>
             </li>
-            <li class="about-us__item like">
+            <li class="about-us__item about-us__item--like">
               <img class="about-us__icon" src="img/icon-feature-heart.svg" width="34" height="27" alt="Сердце">
               <span>Увеличивает лайки на фотографиях</span>
             </li>
-            <li class="about-us__item ball">
+            <li class="about-us__item about-us__item--ball">
               <img class="about-us__icon" src="img/icon-feature-ball.svg" width="35" height="34" alt="Клубок">
               <span>Связано вручную с любовью и умилением</span>
             </li>
-            <li class="about-us__item rocket">
+            <li class="about-us__item about-us__item--rocket">
               <img class="about-us__icon" src="img/icon-feature-rocket.svg" width="55" height="23" alt="Ракета">
               <span>Поддержка отечественного производителя</span>
             </li>
-            <li class="about-us__item gift">
+            <li class="about-us__item about-us__item--gift">
               <img class="about-us__icon" src="img/icon-feature-gift.svg" width="33" height="32" alt="Упаковка">
               <span>Поставляется в подарочной упаковке</span>
             </li>
@@ -138,10 +145,11 @@
           </div>
         <div class="contacts-map">
           <img class="contacts-map__img" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
-          <button class="button" type="button">Напишите нам</button>
+          <button class="contacts__button button" type="button">Напишите нам</button>
         </div>
     </div>
   </section>
+</div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">

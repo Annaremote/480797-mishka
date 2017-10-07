@@ -11,6 +11,22 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+  }
+}
+
+.catalog__item {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
   }
 }

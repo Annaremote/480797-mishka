@@ -6,7 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="container">
+  <body>
+    <div  class="container">
     <header class="page-header">
       <a class="logo" href="index.html">
         <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
@@ -29,53 +30,69 @@
       </ul>
     </nav>
   </header>
+</div>
   <main class="main">
       <h2 class="page-title">Каталог товаров</h2>
+  <div  class="container">
     <section class="catalog">
       <div class="product catalog__item">
-        <a class="product__link" href="#">
-          <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайка">
-          <p class="product__description">Зайчик-попрыгайчик</p>
-          <p class="product__sign">Рост 30 см, вес 200 г</p>
-        </a>
-        <div class="product__wrap">
-          <p class="product__price">1 200 руб.</p>
-          <img class="product__icon" src="img/icon-cart.svg" width="21" height="19" alt="Корзинка"></img>
+        <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайка">
+        <div class="product--info">
+          <a class="product__link" href="#">
+            <p class="product__description">Зайчик-попрыгайчик</p>
+            <p class="product__sign">Рост 30 см, вес 200 г</p>
+          </a>
+          <div class="product__wrap">
+            <p class="product__price">1 200 руб.</p>
+            <img class="product__icon" src="img/icon-cart.svg" width="21" height="19" alt="Корзинка"></img>
+        </div>
+
         </div>
       </div>
       <div class="product catalog__item">
-        <a class="product__link" href="#">
-          <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка">
-          <p class="product__description">Корзинка для белья</p>
-          <p class="product__sign">Диаметр 15 см, высота 10 см</p>
-        </a>
-        <div class="product__price">
-          <p class="product__price">690 руб.</p>
-          <img class="product__icon" src="img/icon-cart.svg" width="21" height="19" alt="Корзинка"></img>
+        <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка">
+        <div class="product--info">
+          <a class="product__link" href="#">
+            <p class="product__description">Корзинка для белья</p>
+            <p class="product__sign">Диаметр 15 см, высота 10 см</p>
+          </a>
+          <div class="product__price">
+            <p class="product__price">690 руб.</p>
+            <img class="product__icon" src="img/icon-cart.svg" width="21" height="19" alt="Корзинка"></img>
+          </div>
         </div>
       </div>
       <div class="product catalog__item">
-        <a class="product__link" href="#">
-          <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзинка для игрушек">
-          <p class="product__description">Большая корзинка для игрушек</p>
-          <p class="product__sign">Диаметр 30 см, высота 30 см</p>
-        </a>
-        <div class="product__price">
-          <p class="product__price">1 500 руб.</p>
-          <img class="product__icon" src="img/icon-cart.svg" width="21" height="19" alt="Корзинка"></img>
+        <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзинка для игрушек">
+        <div class="product--info">
+          <a class="product__link" href="#">
+            <p class="product__description">Большая корзинка для игрушек</p>
+            <p class="product__sign">Диаметр 30 см, высота 30 см</p>
+          </a>
+          <div class="product__price">
+            <p class="product__price">1 500 руб.</p>
+            <img class="product__icon" src="img/icon-cart.svg" width="21" height="19" alt="Корзинка"></img>
+          </div>
         </div>
       </div>
     </section>
     <section class="video">
-      <img class="video__icon" src="img/icon-video.svg" width="32" height="22" alt="Видеокамера"></img>
-      <h2 class="video__title">Процесс производства</h2>
       <div class="video__img">
         <img class="video__background" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Стопкадр"></img>
         <img class="video__play-icon" src="img/icon-play.svg" width="102" height="78" alt="Кнопка"></img>
       </div>
-      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="btn" type="button">Сделать заказ</button>
+      <div class="video--info">
+        <div class="video--head">
+          <img class="video__icon" src="img/icon-video.svg" width="32" height="22" alt="Видеокамера"></img>
+          <h2 class="video__title">Процесс производства</h2>
+        </div>
+        <div class="video--footer">
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="btn" type="button">Сделать заказ</button>
+        </div>
+      </div>
     </section>
+  </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

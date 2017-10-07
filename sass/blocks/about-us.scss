@@ -43,7 +43,7 @@
     font-size: 20px;
     line-height: 22px;
     width: 297px;
-    padding-top: 110px;
+    padding-top: 90px;
     padding-right: 37px;
   }
 
@@ -51,65 +51,71 @@
     font-size: 20px;
     line-height: 22px;
     width: 297px;
-    padding-top: 110px;
+    padding-top: 90px;
     padding-right: 55px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .about-us {
+.about-us__icon {
+  position: relative;
+  bottom: 25px;
+  left: 20px;
+}
+
+.about-us {
+  @media (min-width: $desktop-width) {
     width: 1050px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .eco {
+  .about-us__item--eco {
     order: -1;
   }
 
-  .ball {
+  .about-us__item--ball {
     order: 1;
   }
 
-  .price {
+  .about-us__item--price {
     order: 2;
   }
 
-  .rocket {
+  .about-us__item--rocket {
     order: 3;
   }
 
-  .like {
+  .about-us__item--like {
     order: 4;
   }
 
-  .gift {
+  .about-us__item--gift {
     order: 5;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .eco {
+  .about-us__item--eco {
     order: -1;
   }
 
-  .ball {
+  .about-us__item--ball {
     order: 1;
   }
 
-  .price {
+  .about-us__item--price {
     order: 2;
   }
 
-  .rocket {
+  .about-us__item--rocket {
     order: 3;
   }
 
-  .like {
+  .about-us__item--like {
     order: 4;
   }
 
-  .gift {
+  .about-us__item--gift {
     order: 5;
   }
 }
