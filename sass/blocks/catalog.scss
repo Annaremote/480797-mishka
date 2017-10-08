@@ -1,5 +1,13 @@
 /*Для сетки*/
+
 .catalog {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.catalog__item {
   display: flex;
   flex-direction: column;
 
@@ -11,10 +19,12 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    width: 315px;
+    margin: 0;
   }
 }
 
-.catalog__item {
+.catalog__product {
   padding-top: 30px;
 
   @media (min-width: $tablet-width) {

@@ -6,15 +6,18 @@
   display: flex;
   flex-direction: column;
   padding-top: 40px;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 668px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    width: 1050px;
   }
 }

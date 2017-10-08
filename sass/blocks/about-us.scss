@@ -38,6 +38,7 @@
   list-style: none;
   width: 262px;
   padding-top: 85px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -57,9 +58,9 @@
 }
 
 .about-us__icon {
-  position: relative;
-  bottom: 25px;
-  left: 20px;
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
 }
 
 .about-us {

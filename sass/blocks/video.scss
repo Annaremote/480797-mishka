@@ -21,7 +21,10 @@
   line-height: 24px;
   color: $black;
   width: 127px;
+  margin: 0;
   padding-left: 63px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -45,12 +48,12 @@
 
 .video__icon {
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: absolute;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
-    padding-top: 20px;
   }
 }
 

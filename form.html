@@ -14,7 +14,7 @@
       </a>
       <nav class="main-nav">
           <ul class="main-nav__list site-list">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <li><button class="main-nav__toggle" type="button">Открыть меню</button></li>
             <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -32,29 +32,26 @@
   </header>
 </div>
   <main class="main">
-    <div class="page-title">
       <h2 class="page-title">Вязание на заказ</h2>
-    </div>
   <div class="container">
-    <section class="callback-form">
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
         <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <div class="form__item">
           <span class="form__legend">Тип</span>
-          <div class="form--wrap">
+          <div class="form__wrap">
             <label class="radio">
               <input class="visually-hidden radio__input" type="radio" name="types-group" value="Аксессуар для интерьера" checked>
-                <div class="radio__sign">Аксессуар для интерьера</div>
+                <span class="radio__sign">Аксессуар для интерьера</span>
             </label>
             <label class="radio">
               <input class="visually-hidden radio__input" type="radio" name="types-group" value="Детская игрушка">
-                <div class="radio__sign">Детская игрушка</div>
+                <span class="radio__sign">Детская игрушка</span>
             </label>
           </div>
           </div>
           <div class="form__item">
             <span class="form__legend">Цвет</span>
-            <div class="form--wrap">
+            <div class="form__wrap">
               <label class="checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="color" value="white" checked>
                 <span class="checkbox__sign">Белый</span>
@@ -83,7 +80,7 @@
           </div>
           <div class="form__item">
             <span class="form__legend">ФИО</span>
-            <div class="form--wrap">
+            <div class="form__wrap">
               <label class="field">
                 <span class="field__title">Имя:</span>
                 <input class="field__input" type="text" name="search" placeholder="Введите ваше имя*" required>
@@ -100,27 +97,27 @@
           </div>
             <div class="form__item">
               <span class="form__legend">тел</span>
-              <div class="form--wrap">
+              <div class="form__wrap">
               <label class="form__label field">
                 <input class="field__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
-                <img class="field__img" src="img/icon-phone.svg" width="25" height="24" alt="Телефон"></img>
+                <img class="field__img" src="img/icon-phone.svg" width="25" height="24" alt="Телефон">
               </label>
             </div>
             </div>
             <div class="form__item">
               <span class="form__legend">E-mail</span>
-              <div class="form--wrap">
+              <div class="form__wrap">
               <label class="form__label field">
                 <input class="field__input" type="email" name="email" placeholder="Ваш Email*" required>
-                <img class="field__img" src="img/icon-mail.svg" width="32" height="21" alt="Почта"></img>
+                <img class="field__img" src="img/icon-mail.svg" width="32" height="21" alt="Почта">
               </label>
             </div>
             </div>
             <div class="form__item">
               <span class="form__legend">доп</span>
-              <div class="form--wrap">
+              <div class="form__wrap">
               <label class="form__label field">
-                <textarea class="field__input" type="textarea" name="wish" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="field__input" name="wish" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
             </div>
             </div>
@@ -129,7 +126,6 @@
               <button class="form__button" type="submit">Отправить заказ</button>
             </div>
         </form>
-    </section>
   </div>
   </main>
   <footer class="page-footer">

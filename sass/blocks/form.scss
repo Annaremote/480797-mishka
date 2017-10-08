@@ -6,13 +6,11 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    width: 615px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 30px;
-    width: 675px;
   }
 }
 
@@ -31,7 +29,6 @@
 .form__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border: none;
   padding-top: 30px;
 
@@ -52,14 +49,15 @@
   }
 }
 
-.form--wrap {
+.form__wrap {
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    padding-left: 175px;
   }
 }
 
@@ -75,7 +73,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    width: 668px;
   }
 }
 
