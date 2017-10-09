@@ -1,0 +1,24 @@
+.page-footer {
+  background-color: $gray-light;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}

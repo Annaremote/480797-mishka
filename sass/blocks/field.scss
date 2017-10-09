@@ -9,3 +9,9 @@
   line-height: 16px;
   color: $gray;
 }
+
+.field {
+  @media (min-width: $tablet-width) {
+    padding-left: 167px;
+  }
+}

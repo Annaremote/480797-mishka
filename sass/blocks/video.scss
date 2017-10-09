@@ -1,11 +1,82 @@
+.video {
+  margin: 0;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .video__title {
   font-size: 17px;
   line-height: 24px;
   color: $black;
+  width: 127px;
+  margin: 0;
+  padding-left: 63px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 242px;
+    padding-left: 108px;
+  }
+}
+
+.video__info {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+  }
+}
+
+.video__head {
+  order: -1;
+}
+
+.video__icon {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+}
+
+.video__play-icon {
+  position: absolute;
+  top: 40px;
+  left: 75px;
 }
 
 .video__description {
   font-size: 13px;
   line-height: 24px;
   color: $gray;
+  width: 185px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 24px;
+    width: 582px;
+  }
+}
+
+.video__img {
+  display: flex;
+  position: relative;
 }
