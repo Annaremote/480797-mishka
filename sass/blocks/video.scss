@@ -34,7 +34,7 @@
   }
 }
 
-.video--info {
+.video__info {
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
   }
 }
 
-.video--head {
+.video__head {
   order: -1;
 }
 

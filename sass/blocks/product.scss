@@ -7,11 +7,6 @@
     font-size: 20px;
     line-height: 24px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 24px;
-  }
 }
 
 .product__info {
@@ -29,11 +24,6 @@
     font-size: 15px;
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 15px;
-    line-height: 30px;
-  }
 }
 
 .product__price {
@@ -43,11 +33,6 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 24px;
   }

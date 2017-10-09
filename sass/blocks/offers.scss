@@ -10,14 +10,12 @@
     font-size: 43px;
     line-height: 50px;
     min-height: 627px;
-    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
     min-height: 626px;
-    text-align: center;
   }
 }
 
@@ -34,15 +32,10 @@
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    min-height: 120px;
-  }
-
-  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     min-height: 120px;
@@ -79,6 +72,10 @@
 .offers-list__item {
   display: flex;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .offers-list__item--interior {
