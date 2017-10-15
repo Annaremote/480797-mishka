@@ -1,0 +1,18 @@
+.logo__image {
+  width: 90px;
+  height: 40px;
+  padding: 22px 65px 20px 85px;
+
+  @media (min-width: $tablet-width) {
+    width: 115px;
+    height: 50px;
+    padding: 22px 205px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+    height: 75px;
+
+    order: 2;
+  }
+}

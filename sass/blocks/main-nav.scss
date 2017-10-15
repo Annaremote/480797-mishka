@@ -1,31 +1,18 @@
 .main-nav__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .main-nav {
+  position: relative;
   width: 320px;
+  min-height: 51px;
+  display: flex;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    width: 670px;
-    margin: 0;
-  }
-
-  .site-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list {
-    width: 1050px;
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -37,5 +24,83 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.site-list__item--search {
+  background-image: url("../img/icon-search.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.site-list__item--cart {
+  background-image: url("../img/icon-cart.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav-wrap--closed .main-nav-wrap__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 36px;
+  height: 2px;
+
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav-wrap--closed .main-nav-wrap__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav-wrap--opened .main-nav-wrap__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }

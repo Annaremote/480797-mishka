@@ -2,8 +2,31 @@
   font-size: 17px;
   line-height: 18px;
   color: $black;
+  padding-left: 60px;
+  padding-top: 10px;
 }
 
 .radio {
   cursor: pointer;
+}
+
+
+.radio {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid $black;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.radio__input {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.radio:checked + .radio__input {
+    background-color: $green-light;
 }

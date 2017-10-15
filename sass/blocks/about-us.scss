@@ -1,7 +1,22 @@
+.about-us {
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 75px;
+    padding-left: 175px;
+  }
+}
+
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
   color: $black;
+  margin: 0;
+  padding-top: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -17,15 +32,10 @@
 .about-us__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -44,23 +54,18 @@
     font-size: 20px;
     line-height: 22px;
     width: 297px;
-    padding-top: 90px;
-    padding-right: 37px;
+    padding-top: 108px;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 22px;
-    width: 297px;
-    padding-top: 90px;
     padding-right: 55px;
   }
 }
 
 .about-us__icon {
   position: absolute;
-  bottom: 50px;
-  left: 10px;
+  bottom: 65px;
 }
 
 .about-us {

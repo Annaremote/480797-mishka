@@ -5,17 +5,21 @@
   min-height: 283px;
   text-align: center;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    width: 526px;
     font-size: 43px;
     line-height: 50px;
-    min-height: 627px;
+    min-height: 472px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 648px;
     font-size: 53px;
     line-height: 57px;
-    min-height: 626px;
+    min-height: 472px;
   }
 }
 
@@ -34,11 +38,19 @@
   padding-left: 0;
   margin-left: auto;
   margin-right: auto;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     min-height: 120px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -47,16 +59,15 @@
   line-height: 24px;
   color: $white;
   width: 110px;
-  min-height: 50px;
-  padding-right: 105px;
+  padding-left: 9.4%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 120px;
     min-height: 55px;
-    padding-right: 105px;
-    padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,14 +75,14 @@
     line-height: 30px;
     width: 120px;
     min-height: 55px;
-    padding-right: 280px;
-    padding-left: 35px;
+    padding-left: 8%;
   }
 }
 
 .offers-list__item {
   display: flex;
   list-style: none;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -84,4 +95,16 @@
 
 .offers-list__item--toy {
   background-color: $green-dark;
+}
+
+.offers-list__icon {
+  padding-right: 9.4%;
+  padding-top: 23px;
+  padding-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 34px;
+    padding-top: 28px;
+    padding-bottom: 18px;
+  }
 }

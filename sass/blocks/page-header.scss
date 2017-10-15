@@ -3,14 +3,10 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    height: 150px;
+    height: 242px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 150px;
+    height: 243px;
   }
-}
-
-.page-header__logo {
-  height: 50px;
 }

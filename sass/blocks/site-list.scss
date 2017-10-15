@@ -3,3 +3,16 @@
   line-height: 24px;
   color: $black;
 }
+
+.site-list {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 315px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-width: 668px;
+    min-height: 88px;
+  }
+}

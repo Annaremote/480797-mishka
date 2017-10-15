@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: column;
   padding-top: 33px;
+  padding-bottom: 40px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    padding-top: 53px;
+    padding-top: 45px;
     min-height: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 132px;
+    padding-top: 123px;
   }
 }
 
@@ -49,15 +50,19 @@
   font-size: 17px;
   line-height: 20px;
   color: $green-light;
+  margin: 0;
+  padding-top: 12px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 17px;
     width: 85px;
+    padding-left: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 48px;
+    padding-left: 53px;
     padding-right: 45px;
     order: -1;
   }
@@ -68,12 +73,15 @@
   line-height: 24px;
   color: $gray;
   width: 250px;
+  margin: 0;
+  padding-top: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
     width: 285px;
     padding-right: 50px;
+    padding-top: 50px;
   }
 }
 
@@ -81,9 +89,15 @@
   font-size: 15px;
   line-height: 20px;
   color: $gray;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     width: 295px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 38px;
   }
 }
 
@@ -92,9 +106,23 @@
   font-size: 17px;
   line-height: 24px;
   color: $gray;
+  margin: 0;
+  padding: 30px 68px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 72px;
+    padding-top: 65px;
+    padding-bottom: 35px;
+  }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 120px;
+    }
 }
 
 .week-product__img {
+  padding-top: 30px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 360px;
